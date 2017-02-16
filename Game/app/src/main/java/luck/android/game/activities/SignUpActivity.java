@@ -43,7 +43,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View view) {
-        String userName,email,pass,cnpass;
+        String userName,email,pass,cnpass, gender="Nothing";
         userName = mUserName.getText().toString();
         email = mEmail.getText().toString();
         pass = mPassword.getText().toString();
@@ -61,8 +61,23 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         else if (cnpass.isEmpty()) {
             mConfirmPass.setError(getString(R.string.cant_left_empty));
         }
+        else if (!pass.equals(cnpass)) {
+            mConfirmPass.setError("Confirm password should be same as above password");
+        }
         else if (genderGroup.getCheckedRadioButtonId() == -1) {
             Toast.makeText(SignUpActivity.this,getString(R.string.select_gender),Toast.LENGTH_LONG).show();
+        }
+        else {
+            if (genderGroup.getCheckedRadioButtonId() == R.id.male) {
+                gender = male.getText().toString();
+            }
+            else if (genderGroup.getCheckedRadioButtonId() == R.id.female) {
+                gender = female.getText().toString();
+            }
+            else if (genderGroup.getCheckedRadioButtonId() == R.id.transgender) {
+                gender = transgender.getText().toString();
+            }
+            Toast.makeText(SignUpActivity.this,"All Validation Done "+gender,Toast.LENGTH_LONG).show();
         }
 
     }

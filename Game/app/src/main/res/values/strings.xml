@@ -20,4 +20,5 @@
     <string name="title_activity_sign_up">SignUpActivity</string>
     <string name="cant_left_empty">Can not be empty</string>
     <string name="select_gender">please select gender </string>
+    <string name="title_activity_game">GameActivity</string>
 </resources>
