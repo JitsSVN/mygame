@@ -74,6 +74,16 @@
         android:layout_height="0dp"
         android:layout_weight=".6"
         android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp"
+            android:id="@+id/rollabel"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="@string/click_to_roll"/>
         <luck.android.game.utils.GIFView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
