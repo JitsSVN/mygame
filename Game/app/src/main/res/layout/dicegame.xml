@@ -84,12 +84,24 @@
             android:textStyle="bold"
             android:gravity="center_horizontal"
             android:text="@string/click_to_roll"/>
-        <luck.android.game.utils.GIFView
+        <ImageView
+            android:id="@+id/diceStatic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/dice"/>
+        <LinearLayout
+            android:id="@+id/laydiceGif"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            components:src="@raw/animated"
-            />
+            android:visibility="gone"
+            android:layout_centerInParent="true">
+            <luck.android.game.utils.GIFView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                components:src="@raw/animated"
+                />
+        </LinearLayout>
     </RelativeLayout>
 
     <LinearLayout
