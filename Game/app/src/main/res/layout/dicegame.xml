@@ -28,7 +28,8 @@
             android:layout_weight=".7"
             android:orientation="vertical">
 
-            <TextView
+
+            <luck.android.game.utils.CustomTextView
                 android:id="@+id/fplayername"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -78,7 +79,7 @@
         android:layout_weight=".6"
         android:orientation="vertical">
 
-        <TextView
+        <luck.android.game.utils.CustomTextView
             android:id="@+id/rollabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -131,8 +132,7 @@
             android:layout_height="match_parent"
             android:layout_weight=".7"
             android:orientation="vertical">
-
-            <TextView
+            <luck.android.game.utils.CustomTextView
                 android:id="@+id/splayername"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"

@@ -62,10 +62,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink);
         mClickHeading.setAnimation(animation);
-        Typeface myFont = Typeface.createFromAsset(getAssets(), "fonts/Pacifico.ttf");
-        mFirstPlayer.setTypeface(myFont);
-        mSecondPlayer.setTypeface(myFont);
-        mClickHeading.setTypeface(myFont);
 
         mClickHeading.setOnClickListener(this);
         diceStatic.setOnClickListener(this);
