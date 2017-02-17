@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:components="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -29,13 +29,13 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/fplayername"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/fplayerpic"
                 android:layout_weight=".3"
                 android:text="Jitendra"
-                android:id="@+id/fplayername"
                 android:textColor="@color/colorAccent"
                 android:textSize="15dp"
                 android:textStyle="bold" />
@@ -47,22 +47,25 @@
                 android:orientation="horizontal">
 
                 <ImageView
+                    android:id="@+id/first"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:src="@drawable/five" />
+                    android:src="@drawable/question" />
 
                 <ImageView
+                    android:id="@+id/second"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:src="@drawable/four" />
+                    android:src="@drawable/question" />
 
                 <ImageView
+                    android:id="@+id/third"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:src="@drawable/six" />
+                    android:src="@drawable/question" />
             </LinearLayout>
         </LinearLayout>
 
@@ -74,33 +77,44 @@
         android:layout_height="0dp"
         android:layout_weight=".6"
         android:orientation="vertical">
+
         <TextView
+            android:id="@+id/rollabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/click_to_roll"
             android:textColor="@color/colorAccent"
             android:textSize="30dp"
-            android:id="@+id/rollabel"
-            android:textStyle="bold"
-            android:gravity="center_horizontal"
-            android:text="@string/click_to_roll"/>
+            android:textStyle="bold" />
+
         <ImageView
             android:id="@+id/diceStatic"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerInParent="true"
-            android:src="@drawable/dice"/>
+            android:src="@drawable/dice" />
+
+        <ImageView
+            android:id="@+id/mynumber"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:src="@drawable/dice" />
+
         <LinearLayout
             android:id="@+id/laydiceGif"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="gone"
-            android:layout_centerInParent="true">
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
             <luck.android.game.utils.GIFView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                components:src="@raw/animated"
-                />
+                components:src="@raw/animated" />
         </LinearLayout>
     </RelativeLayout>
 
@@ -119,6 +133,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/splayername"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginTop="10dp"
@@ -127,7 +142,6 @@
                 android:gravity="right"
                 android:text="Jitendra"
                 android:textColor="@color/colorAccent"
-                android:id="@+id/splayername"
                 android:textSize="15dp"
                 android:textStyle="bold" />
 
@@ -138,22 +152,25 @@
                 android:orientation="horizontal">
 
                 <ImageView
+                    android:id="@+id/fourth"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:src="@drawable/five" />
+                    android:src="@drawable/question" />
 
                 <ImageView
+                    android:id="@+id/fifth"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:src="@drawable/four" />
+                    android:src="@drawable/question" />
 
                 <ImageView
+                    android:id="@+id/sixth"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:src="@drawable/six" />
+                    android:src="@drawable/question" />
             </LinearLayout>
         </LinearLayout>
 
