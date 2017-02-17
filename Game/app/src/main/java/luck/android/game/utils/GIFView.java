@@ -55,8 +55,8 @@ public class GIFView extends View {
         setFocusable(true);
         gifInputStream = context.getResources().openRawResource(R.raw.animated);
         gifMovie = Movie.decodeStream(gifInputStream);
-        movieWidth = 200/*gifMovie.width()*/;
-        movieHeight = 200/*gifMovie.height()*/;
+        movieWidth = 250/*gifMovie.width()*/;
+        movieHeight = 250/*gifMovie.height()*/;
         movieDuration = gifMovie.duration();
         screenWidth = /*context.getResources().getDisplayMetrics().widthPixels;*/movieWidth;
         screenHeight = /*context.getResources().getDisplayMetrics().heightPixels;*/movieHeight;
